@@ -1,0 +1,11 @@
+﻿<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Package Id="TODO_Manufacturer.Package1" Name="Example Desktop Installer" Manufacturer="ICT Raff" Version="1.0.0.0">
+    <Media Id="1" Cabinet="Example.cab" EmbedCab="yes" />
+
+    <MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeError)" />
+
+    <Feature Id="Main">
+      <ComponentGroupRef Id="ExampleComponents" />
+    </Feature>
+  </Package>
+</Wix>

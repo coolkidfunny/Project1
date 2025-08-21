@@ -1,0 +1,12 @@
+<Wix xmlns="http://wixtoolset.org/schemas/v4/wxs">
+  <Fragment>
+    <ComponentGroup Id="ExampleComponents" Directory="MyExampleInstaller">
+      <Component Id="ExampleDesktop.exe" Guid="8E9E6ECF-ED88-452F-9B13-939E5D7A8AF7">
+        <File Id= "ExampleDesktop.exe" Name= "ExampleDesktop.exe" Source= "$(var.ExampleDesktop.TargetDir)ExampleDesktop.exe"> </File>
+      </Component>
+      <Component Id="PersonDLL.dll" Guid="F6556AD8-0440-414F-9B3E-A29AD3980BB4">
+        <File Id= "PersonDLL.dll" Name= "PersonDLL.dll" Source= "$(var.PersonDLL.TargetDir)PersonDLL.dll"> </File>
+      </Component>
+    </ComponentGroup>
+  </Fragment>
+</Wix>
